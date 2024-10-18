@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Perea</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "{% static 'estilos.css' %}">
+    </head>
+    <body>
+        <h1>Esto fue realizado en Visual studio Code </h1>
+        <h1>Perea Joel</h1>
+        <HR>
+            {% for i in MisAlumnos %}
+                <li>{{i.Nombre}}</li>
+            {% endfor %}
+        </HR>
+        <script src="{% static 'script.js' %}" ></script>
+    </body> 
+</html>
